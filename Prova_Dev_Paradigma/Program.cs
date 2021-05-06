@@ -37,9 +37,11 @@ namespace Prova_Dev_Paradigma
             var stringArrayModificada = obterArrayConcatenada<int>(arrayModificada.ToArray());
             var somaArrayModificada = arrayModificada.Sum();
 
+            Console.WriteLine("Tarefa 1: \n\n");
             Console.WriteLine("Array Original: [{0}]", stringArrayOriginal);
             Console.WriteLine("Array Modificada: [{0}]", stringArrayModificada);
             Console.WriteLine("Soma valores array modificada: {0}", somaArrayModificada);
+            Console.WriteLine("\n\n\n");
         }
 
         public static void Tarefa_2()
@@ -48,6 +50,7 @@ namespace Prova_Dev_Paradigma
             var strSomaEntrada = string.Empty;
             int somaEntrada = 0;
 
+            Console.WriteLine("Tarefa 3: \n\n");
             Console.WriteLine("Digite a lista de numeros (separados por virgula (,)): ");
             strArrayEntrada = Console.ReadLine();
 
@@ -88,6 +91,8 @@ namespace Prova_Dev_Paradigma
                         Console.WriteLine();
                         Console.WriteLine("{0} + {1} = {2} ===> {0} + {1} são os números encontrados no array de entrada ", intArrayEntrada[indiceA], intArrayEntrada[indiceB], somaEntrada);
                         Console.WriteLine("Indice {0} e Indice {1} são os indices dos números encontrados no array de entrada ", indiceA, indiceB);
+                        Console.WriteLine("\n\n\n");
+
                         return;
                     }
                 }
@@ -95,6 +100,7 @@ namespace Prova_Dev_Paradigma
 
             Console.WriteLine();
             Console.WriteLine("X + Y = {0} ===> \nNenhuma combinação de números encontrados no array de entrada ", somaEntrada);
+            Console.WriteLine("\n\n\n");
         }
 
         private static string obterArrayConcatenada<T>(T[] array)
